@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaglineActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/walpaper">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tagline"
+        android:textSize="35sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_ma">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isi Tagline"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:id="@+id/isiTagline"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:background="@drawable/back_ma">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Tagline"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Isi"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="#c8d6e5"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi"
+                android:id="@+id/tagline1"
+                android:textColorHint="#8A000000"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:layout_gravity="bottom"
+                android:id="@+id/btnBackTagline"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_trans"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="update"
+                android:layout_gravity="bottom"
+                android:id="@+id/btnUpdateTagline"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_trans"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

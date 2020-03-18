@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndentitasActivity"
+    android:orientation="vertical"
+    android:background="@drawable/walpaper"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identitas Masjid"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/clean"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_ma">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Masjid"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:id="@+id/nama_masjid"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat Masjid"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:id="@+id/alamat_masjid"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:background="@drawable/back_ma">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Identitas Masjid"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="#c8d6e5"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="#c8d6e5"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Masjid"
+                android:id="@+id/identitas1"
+                android:textColorHint="#7E000000"
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textColor="#c8d6e5"/>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="10dp"
+                android:textColor="#c8d6e5"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat Masjid"
+                android:id="@+id/identitas2"
+                android:textColorHint="#7E000000"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:layout_gravity="bottom"
+                android:id="@+id/btnBackIdentitas"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_trans"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="update"
+                android:layout_gravity="bottom"
+                android:id="@+id/btnUpdateIdentitas"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_trans"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
